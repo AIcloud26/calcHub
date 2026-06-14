@@ -1,2 +1,0 @@
-# calchub
-calculator
