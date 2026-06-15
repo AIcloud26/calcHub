@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcHub - Free Online Calculators for Everyday Life</title>
+    <meta name="description" content="CalcHub offers 50+ free online calculators for finance, health, math, and daily needs. Accurate, fast, and easy-to-use tools for everyone.">
+    <meta name="keywords" content="online calculator, free calculator, BMI calculator, loan calculator, mortgage calculator, percentage calculator">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CalcHub - Free Online Calculators for Everyday Life">
+    <meta property="og:description" content="50+ free online calculators for finance, health, math, and daily needs. Accurate, fast, and easy-to-use.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aicloud26.github.io/calcHub/">
+    <meta property="og:image" content="https://aicloud26.github.io/calcHub/images/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CalcHub - Free Online Calculators">
+    <meta name="twitter:description" content="50+ free online calculators for finance, health, math, and daily needs.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://aicloud26.github.io/calcHub/">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CalcHub",
+        "url": "https://aicloud26.github.io/calcHub/",
+        "description": "Free online calculators for finance, health, math, and everyday life.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://aicloud26.github.io/calcHub/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header id="main-header"></header>
+    
+    <!-- Top Ad Banner -->
+    <div class="container-custom py-2 no-print">
+        <div class="ad-placeholder ad-placeholder-horizontal" data-ad-slot="header-banner"></div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 md:py-24">
+        <div class="container-custom text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                Free Online Calculators<br>
+                <span class="text-primary">for Everyday Life</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Accurate, fast, and easy-to-use calculators for finance, health, math, and daily needs. 
+                No signup required. Completely free.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#popular-calculators" class="btn btn-primary btn-lg">
+                    Start Calculating
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="#categories" class="btn btn-secondary btn-lg">
+                    Browse Categories
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-8 max-w-xl mx-auto mt-12">
+                <div>
+                    <p class="text-3xl font-bold text-primary">50+</p>
+                    <p class="text-sm text-gray-500">Calculators</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-primary">1M+</p>
+                    <p class="text-sm text-gray-500">Monthly Users</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-primary">100%</p>
+                    <p class="text-sm text-gray-500">Free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Calculators -->
+    <section id="popular-calculators" class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Calculators</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our most used tools, trusted by millions for accurate results every day.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <!-- BMI Calculator -->
+                <a href="calculator/bmi-calculator.html" class="card calc-card">
+                    <div class="calc-icon">⚖️</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">BMI Calculator</h3>
+                    <p class="text-sm text-gray-500">Calculate your Body Mass Index</p>
+                </a>
+                
+                <!-- Age Calculator -->
+                <a href="calculator/age-calculator.html" class="card calc-card">
+                    <div class="calc-icon">🎂</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Age Calculator</h3>
+                    <p class="text-sm text-gray-500">Find your exact age</p>
+                </a>
+                
+                <!-- Percentage Calculator -->
+                <a href="calculator/percentage-calculator.html" class="card calc-card">
+                    <div class="calc-icon">%</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Percentage</h3>
+                    <p class="text-sm text-gray-500">Calculate percentages</p>
+                </a>
+                
+                <!-- Mortgage Calculator -->
+                <a href="calculator/mortgage-calculator.html" class="card calc-card">
+                    <div class="calc-icon">🏠</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Mortgage</h3>
+                    <p class="text-sm text-gray-500">Estimate monthly payments</p>
+                </a>
+                
+                <!-- Loan Calculator -->
+                <a href="calculator/loan-calculator.html" class="card calc-card">
+                    <div class="calc-icon">💰</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Loan Calculator</h3>
+                    <p class="text-sm text-gray-500">Calculate loan payments</p>
+                </a>
+                
+                <!-- Investment Calculator -->
+                <a href="calculator/investment-calculator.html" class="card calc-card">
+                    <div class="calc-icon">📈</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Investment</h3>
+                    <p class="text-sm text-gray-500">Growth projections</p>
+                </a>
+                
+                <!-- Retirement Calculator -->
+                <a href="calculator/retirement-calculator.html" class="card calc-card">
+                    <div class="calc-icon">🏖️</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Retirement</h3>
+                    <p class="text-sm text-gray-500">Plan your future</p>
+                </a>
+                
+                <!-- Salary Calculator -->
+                <a href="calculator/salary-calculator.html" class="card calc-card">
+                    <div class="calc-icon">💵</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Salary Calculator</h3>
+                    <p class="text-sm text-gray-500">Convert annual to hourly</p>
+                </a>
+                
+                <!-- Calorie Calculator -->
+                <a href="calculator/calorie-calculator.html" class="card calc-card">
+                    <div class="calc-icon">🍽️</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Calorie Calculator</h3>
+                    <p class="text-sm text-gray-500">Daily calorie needs</p>
+                </a>
+                
+                <!-- Date Calculator -->
+                <a href="calculator/date-difference-calculator.html" class="card calc-card">
+                    <div class="calc-icon">📅</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Date Calculator</h3>
+                    <p class="text-sm text-gray-500">Days between dates</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section id="categories" class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+                <p class="text-gray-600">Find the right calculator for your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+                <a href="category/finance.html" class="category-card">
+                    <div class="category-icon">💰</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Finance</h3>
+                    <p class="text-sm text-gray-500">12 calculators</p>
+                </a>
+                
+                <a href="category/health.html" class="category-card">
+                    <div class="category-icon">❤️</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Health</h3>
+                    <p class="text-sm text-gray-500">8 calculators</p>
+                </a>
+                
+                <a href="category/math.html" class="category-card">
+                    <div class="category-icon">📐</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Math</h3>
+                    <p class="text-sm text-gray-500">10 calculators</p>
+                </a>
+                
+                <a href="category/business.html" class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Business</h3>
+                    <p class="text-sm text-gray-500">15 calculators</p>
+                </a>
+                
+                <a href="category/conversion.html" class="category-card">
+                    <div class="category-icon">🔄</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Conversion</h3>
+                    <p class="text-sm text-gray-500">20 calculators</p>
+                </a>
+                
+                <a href="category/lifestyle.html" class="category-card">
+                    <div class="category-icon">🏠</div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Lifestyle</h3>
+                    <p class="text-sm text-gray-500">5 calculators</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose CalcHub?</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Fast & Accurate</h3>
+                    <p class="text-gray-600">Get instant, precise results using industry-standard formulas. No waiting, no approximations.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Works perfectly on any device - desktop, tablet, or phone. Calculate anywhere, anytime.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">100% Free</h3>
+                    <p class="text-gray-600">No signup, no payments, no limits. All calculators are completely free to use forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest Articles -->
+    <section class="section">
+        <div class="container-custom">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Latest from Blog</h2>
+                <a href="blog/index.html" class="text-primary font-semibold hover:underline">View All →</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="blog-card">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 h-48 flex items-center justify-center">
+                        <span class="text-6xl">⚖️</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <p class="blog-meta mb-2">January 15, 2024 • Health</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="blog/how-to-calculate-bmi.html" class="hover:text-primary">How to Calculate BMI: Complete Guide</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm">Learn everything about Body Mass Index, how it's calculated, and what your BMI means for your health.</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 h-48 flex items-center justify-center">
+                        <span class="text-6xl">💰</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <p class="blog-meta mb-2">January 12, 2024 • Finance</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="blog/loan-interest-guide.html" class="hover:text-primary">Loan Interest Guide: Understanding APR</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm">Decode the complexities of loan interest rates, APR, and how to get the best deal on your loan.</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 h-48 flex items-center justify-center">
+                        <span class="text-6xl">🏠</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <p class="blog-meta mb-2">January 10, 2024 • Finance</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="blog/mortgage-calculator-guide.html" class="hover:text-primary">Mortgage Calculator Guide</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm">Everything you need to know about using mortgage calculators to plan your home purchase.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="section bg-white">
+        <div class="container-custom">
+            <div class="newsletter-section text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Stay Updated</h2>
+                <p class="text-blue-100 mb-6 max-w-lg mx-auto">Get notified about new calculators and helpful guides. No spam, unsubscribe anytime.</p>
+                <form class="newsletter-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input flex-1" required>
+                    <button type="submit" class="bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="main-footer"></footer>
+    
+    <!-- Scripts -->
+    <script src="js/common.js"></script>
+</body>
+</html>
