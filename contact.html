@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - CalcHub</title>
-    <meta name="description" content="Get in touch with CalcHub. Send us your questions, feedback, or calculator suggestions. We're here to help.">
+    <meta name="description" content="Get in touch with CalcHub. Send us your questions, feedback, or calculator suggestions. We'd love to hear from you.">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Contact Us - CalcHub">
     <meta property="og:description" content="Get in touch with CalcHub. Send us your questions, feedback, or calculator suggestions.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aicloud26.github.io/calcHub/contact.html">
+    <meta property="og:url" content="https://aicloud26.github.io/calchub/contact.html">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="Get in touch with us.">
     
     <!-- Canonical -->
-    <link rel="canonical" href="https://aicloud26.github.io/calcHub/contact.html">
+    <link rel="canonical" href="https://aicloud26.github.io/calchub/contact.html">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +33,13 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0A84FF',
+                        'primary-dark': '#0070E0',
+                        'primary-light': '#5AC8FA',
+                        charcoal: '#1C1C1E',
+                        surface: '#F5F5F7',
                     }
                 }
             }
@@ -50,106 +57,121 @@
             "@type": "Organization",
             "name": "CalcHub",
             "email": "hello@calchub.com",
-            "url": "https://aicloud26.github.io/calcHub/"
+            "url": "https://aicloud26.github.io/calchub/"
         }
     }
     </script>
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col bg-surface">
     <header id="main-header"></header>
     
     <main class="flex-1">
-        <!-- Hero -->
-        <section class="hero-gradient py-12">
-            <div class="container-custom">
+        <!-- Hero Banner -->
+        <section class="relative overflow-hidden bg-charcoal py-16 md:py-20">
+            <div class="absolute inset-0 opacity-10">
+                <svg width="100%" height="100%" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="650" cy="80" r="120" stroke="#0A84FF" stroke-width="1"/>
+                    <circle cx="150" cy="350" r="80" stroke="#5AC8FA" stroke-width="1"/>
+                    <rect x="600" y="250" width="100" height="100" rx="8" stroke="#0A84FF" stroke-width="1" transform="rotate(15 650 300)"/>
+                    <line x1="0" y1="200" x2="800" y2="200" stroke="#5AC8FA" stroke-width="0.5" stroke-dasharray="8 8"/>
+                </svg>
+            </div>
+            <div class="container-custom relative z-10">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
-                    <p class="text-xl text-gray-600">We'd love to hear from you. Send us a message!</p>
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
+                        <svg class="w-4 h-4 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span class="text-sm text-white/80">We'd love to hear from you</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                    <p class="text-lg text-white/60">Questions, feedback, or suggestions — we're here to help.</p>
                 </div>
             </div>
         </section>
-        
-        <!-- Contact Form Section -->
-        <section class="section">
+
+        <!-- Contact Content -->
+        <section class="py-16 md:py-20">
             <div class="container-custom">
-                <div class="max-w-4xl mx-auto">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <!-- Contact Info -->
-                        <div class="md:col-span-1">
-                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                            
-                            <div class="space-y-6">
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-semibold text-gray-900">Email</h3>
-                                        <p class="text-gray-600">hello@calchub.com</p>
-                                    </div>
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                        
+                        <!-- Left: Contact Info -->
+                        <div class="md:col-span-1 space-y-8">
+                            <div>
+                                <h2 class="text-2xl font-bold text-charcoal mb-2">Get in Touch</h2>
+                                <p class="text-gray-500">Reach out through any of the channels below.</p>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
                                 </div>
-                                
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-semibold text-gray-900">Response Time</h3>
-                                        <p class="text-gray-600">Usually within 24-48 hours</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-semibold text-gray-900">We Can Help With</h3>
-                                        <ul class="text-gray-600 text-sm space-y-1">
-                                            <li>• Calculator suggestions</li>
-                                            <li>• Bug reports</li>
-                                            <li>• General questions</li>
-                                            <li>• Partnership inquiries</li>
-                                        </ul>
-                                    </div>
+                                <div>
+                                    <h3 class="font-semibold text-charcoal">Email</h3>
+                                    <a href="mailto:hello@calchub.com" class="text-primary hover:text-primary-dark transition-colors">hello@calchub.com</a>
                                 </div>
                             </div>
-                            
-                            <div class="mt-8 p-4 bg-blue-50 rounded-lg">
-                                <p class="text-sm text-gray-600">
-                                    <strong>Note:</strong> This is a static website and cannot send emails directly. 
-                                    Your message will be reviewed and we'll respond as soon as possible.
+
+                            <!-- Response Time -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-charcoal">Response Time</h3>
+                                    <p class="text-gray-500">Usually within 24–48 hours</p>
+                                </div>
+                            </div>
+
+                            <!-- Topics -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-charcoal">We Can Help With</h3>
+                                    <ul class="text-gray-500 text-sm space-y-1 mt-1">
+                                        <li>Calculator suggestions</li>
+                                        <li>Bug reports</li>
+                                        <li>General questions</li>
+                                        <li>Partnership inquiries</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                                <p class="text-sm text-gray-500">
+                                    <strong class="text-charcoal">Note:</strong> This is a static website. Your message will be reviewed and we'll respond as soon as possible.
                                 </p>
                             </div>
                         </div>
-                        
-                        <!-- Contact Form -->
+
+                        <!-- Right: Contact Form -->
                         <div class="md:col-span-2">
-                            <div class="bg-white rounded-xl shadow-sm p-8">
-                                <h2 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
+                            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-10">
+                                <h2 class="text-2xl font-bold text-charcoal mb-8">Send a Message</h2>
                                 
                                 <form id="contact-form" class="space-y-6">
                                     <div class="grid md:grid-cols-2 gap-6">
-                                        <div class="form-group mb-0">
-                                            <label for="name" class="form-label">Your Name *</label>
-                                            <input type="text" id="name" name="name" class="form-input" placeholder="John Smith" required>
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-charcoal mb-2">Your Name <span class="text-red-400">*</span></label>
+                                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400" placeholder="John Smith" required>
                                         </div>
-                                        
-                                        <div class="form-group mb-0">
-                                            <label for="email" class="form-label">Email Address *</label>
-                                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-charcoal mb-2">Email Address <span class="text-red-400">*</span></label>
+                                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400" placeholder="john@example.com" required>
                                         </div>
                                     </div>
                                     
                                     <div>
-                                        <label for="subject" class="form-label">Subject *</label>
-                                        <select id="subject" name="subject" class="form-select" required>
+                                        <label for="subject" class="block text-sm font-medium text-charcoal mb-2">Subject <span class="text-red-400">*</span></label>
+                                        <select id="subject" name="subject" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-700" required>
                                             <option value="">Select a topic...</option>
                                             <option value="suggestion">Calculator Suggestion</option>
                                             <option value="bug">Bug Report</option>
@@ -161,35 +183,37 @@
                                     </div>
                                     
                                     <div>
-                                        <label for="message" class="form-label">Message *</label>
-                                        <textarea id="message" name="message" rows="6" class="form-input" placeholder="Tell us how we can help..." required></textarea>
+                                        <label for="message" class="block text-sm font-medium text-charcoal mb-2">Message <span class="text-red-400">*</span></label>
+                                        <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-400 resize-none" placeholder="Tell us how we can help..." required></textarea>
                                     </div>
                                     
                                     <div class="flex items-start gap-3">
-                                        <input type="checkbox" id="consent" name="consent" class="mt-1" required>
-                                        <label for="consent" class="text-sm text-gray-600">
-                                            I agree to the <a href="privacy-policy.html" class="text-primary hover:underline">Privacy Policy</a> 
+                                        <input type="checkbox" id="consent" name="consent" class="mt-1 w-4 h-4 rounded border-gray-300 text-primary focus:ring-primary" required>
+                                        <label for="consent" class="text-sm text-gray-500">
+                                            I agree to the <a href="privacy-policy.html" class="text-primary hover:text-primary-dark underline">Privacy Policy</a> 
                                             and consent to having CalcHub store my message for response purposes.
                                         </label>
                                     </div>
                                     
-                                    <button type="submit" class="btn btn-primary btn-lg w-full md:w-auto">
+                                    <button type="submit" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-primary/25">
                                         Send Message
-                                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                         </svg>
                                     </button>
                                 </form>
                                 
-                                <!-- Success Message (hidden by default) -->
-                                <div id="form-success" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                                <!-- Success Message -->
+                                <div id="form-success" class="hidden mt-6 p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
                                     <div class="flex items-center gap-3">
-                                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
+                                        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
                                         <div>
-                                            <p class="font-semibold text-green-800">Message Sent!</p>
-                                            <p class="text-sm text-green-600">Thank you for contacting us. We'll get back to you soon.</p>
+                                            <p class="font-semibold text-emerald-800">Message Sent!</p>
+                                            <p class="text-sm text-emerald-600">Thank you for contacting us. We'll get back to you soon.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -199,47 +223,62 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- FAQ -->
-        <section class="section bg-white">
+        <section class="py-16 bg-white">
             <div class="container-custom">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions</h2>
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold text-charcoal mb-3">Frequently Asked Questions</h2>
+                        <p class="text-gray-500">Quick answers to common questions.</p>
+                    </div>
                     
                     <div class="space-y-4">
-                        <div class="faq-item active">
-                            <button class="faq-question w-full text-left">
-                                How do I request a new calculator?
-                                <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <div class="faq-item active border border-gray-100 rounded-xl overflow-hidden">
+                            <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between bg-surface hover:bg-gray-100 transition-colors">
+                                <span class="font-semibold text-charcoal">How do I request a new calculator?</span>
+                                <svg class="faq-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </button>
-                            <div class="faq-answer">
-                                <p>Simply fill out the contact form above and select "Calculator Suggestion" as your subject. Tell us what calculator you'd like to see, and we'll consider adding it to our collection.</p>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-500">Fill out the contact form above and select "Calculator Suggestion" as your subject. Tell us what calculator you'd like to see, and we'll consider adding it.</p>
                             </div>
                         </div>
                         
-                        <div class="faq-item">
-                            <button class="faq-question w-full text-left">
-                                Are your calculators free to use?
-                                <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                            <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between bg-surface hover:bg-gray-100 transition-colors">
+                                <span class="font-semibold text-charcoal">Are your calculators free to use?</span>
+                                <svg class="faq-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </button>
-                            <div class="faq-answer">
-                                <p>Yes! All calculators on CalcHub are completely free to use. No signup required, no hidden fees, no limits. Just open and calculate.</p>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-500">Yes! All calculators on CalcHub are completely free. No signup required, no hidden fees, no limits.</p>
                             </div>
                         </div>
                         
-                        <div class="faq-item">
-                            <button class="faq-question w-full text-left">
-                                Can I use CalcHub on my phone?
-                                <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                            <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between bg-surface hover:bg-gray-100 transition-colors">
+                                <span class="font-semibold text-charcoal">Can I use CalcHub on my phone?</span>
+                                <svg class="faq-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </button>
-                            <div class="faq-answer">
-                                <p>Absolutely! All our calculators are fully responsive and work great on desktop, tablet, and mobile devices.</p>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-500">Absolutely! All our calculators are fully responsive and work great on desktop, tablet, and mobile devices.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                            <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between bg-surface hover:bg-gray-100 transition-colors">
+                                <span class="font-semibold text-charcoal">Is my data safe?</span>
+                                <svg class="faq-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-500">Your data stays on your device. We don't store personal information, use cookies for tracking, or share your data with third parties.</p>
                             </div>
                         </div>
                     </div>
@@ -254,9 +293,10 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            // Show success message (in a real app, this would send the form)
             document.getElementById('form-success').classList.remove('hidden');
             this.reset();
+            // Scroll to success message
+            document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     </script>
 </body>
